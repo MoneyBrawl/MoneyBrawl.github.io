@@ -1,0 +1,25 @@
+# main links links
+main:
+#   - title: "Publications"
+#     url: /publications/
+
+#   - title: "Talks"
+#     url: /talks/    
+
+#   - title: "Teaching"
+#     url: /teaching/    
+        
+  - title: "Telling Stories with Data"
+    url: /telling-stories-with-data/
+
+  - title: "Tableau"
+    url: /tableau/
+
+  - title: "D3"
+    url: /D3/
+    
+  # - title: "CV"
+  #   url: /cv/
+    
+  # - title: "Guide"
+  #   url: /markdown/

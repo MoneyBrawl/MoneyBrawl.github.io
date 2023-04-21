@@ -1,0 +1,18 @@
+current directory: /Users/bleathers/Documents/Personal/a_locked_on_bulldogs/delete/vendor/bundle/ruby/2.6.0/gems/racc-1.6.2/ext/racc/cparse
+/System/Library/Frameworks/Ruby.framework/Versions/2.6/usr/bin/ruby -I /System/Library/Frameworks/Ruby.framework/Versions/2.6/usr/lib/ruby/2.6.0 -r ./siteconf20230421-50436-1daxhpq.rb extconf.rb
+checking for rb_block_call()... yes
+checking for rb_ary_subseq()... yes
+creating Makefile
+
+current directory: /Users/bleathers/Documents/Personal/a_locked_on_bulldogs/delete/vendor/bundle/ruby/2.6.0/gems/racc-1.6.2/ext/racc/cparse
+make "DESTDIR=" clean
+
+current directory: /Users/bleathers/Documents/Personal/a_locked_on_bulldogs/delete/vendor/bundle/ruby/2.6.0/gems/racc-1.6.2/ext/racc/cparse
+make "DESTDIR="
+compiling cparse.c
+linking shared-object racc/cparse.bundle
+ld: warning: directory not found for option '-L/AppleInternal/Library/BuildRoots/9e200cfa-7d96-11ed-886f-a23c4f261b56/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.2.Internal.sdk/usr/local/lib'
+
+current directory: /Users/bleathers/Documents/Personal/a_locked_on_bulldogs/delete/vendor/bundle/ruby/2.6.0/gems/racc-1.6.2/ext/racc/cparse
+make "DESTDIR=" install
+/usr/bin/install -c -m 0755 cparse.bundle ./.gem.20230421-50436-c0syz8/racc
