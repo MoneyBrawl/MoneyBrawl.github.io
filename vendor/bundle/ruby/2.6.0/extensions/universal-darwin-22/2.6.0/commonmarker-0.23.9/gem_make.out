@@ -1,11 +1,11 @@
-current directory: /Users/bleathers/Documents/Personal/a_locked_on_bulldogs/delete/vendor/bundle/ruby/2.6.0/gems/commonmarker-0.23.9/ext/commonmarker
-/System/Library/Frameworks/Ruby.framework/Versions/2.6/usr/bin/ruby -I /System/Library/Frameworks/Ruby.framework/Versions/2.6/usr/lib/ruby/2.6.0 -r ./siteconf20230421-50436-1otvq6.rb extconf.rb
+current directory: /Users/bleathers/Documents/Personal/drews_github/NormanWalkwell.github.io/vendor/bundle/ruby/2.6.0/gems/commonmarker-0.23.9/ext/commonmarker
+/System/Library/Frameworks/Ruby.framework/Versions/2.6/usr/bin/ruby -I /System/Library/Frameworks/Ruby.framework/Versions/2.6/usr/lib/ruby/2.6.0 -r ./siteconf20230422-50795-1c5b1uo.rb extconf.rb
 creating Makefile
 
-current directory: /Users/bleathers/Documents/Personal/a_locked_on_bulldogs/delete/vendor/bundle/ruby/2.6.0/gems/commonmarker-0.23.9/ext/commonmarker
+current directory: /Users/bleathers/Documents/Personal/drews_github/NormanWalkwell.github.io/vendor/bundle/ruby/2.6.0/gems/commonmarker-0.23.9/ext/commonmarker
 make "DESTDIR=" clean
 
-current directory: /Users/bleathers/Documents/Personal/a_locked_on_bulldogs/delete/vendor/bundle/ruby/2.6.0/gems/commonmarker-0.23.9/ext/commonmarker
+current directory: /Users/bleathers/Documents/Personal/drews_github/NormanWalkwell.github.io/vendor/bundle/ruby/2.6.0/gems/commonmarker-0.23.9/ext/commonmarker
 make "DESTDIR="
 compiling arena.c
 compiling autolink.c
@@ -1722,6 +1722,6 @@ compiling xml.c
 linking shared-object commonmarker/commonmarker.bundle
 ld: warning: directory not found for option '-L/AppleInternal/Library/BuildRoots/9e200cfa-7d96-11ed-886f-a23c4f261b56/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.2.Internal.sdk/usr/local/lib'
 
-current directory: /Users/bleathers/Documents/Personal/a_locked_on_bulldogs/delete/vendor/bundle/ruby/2.6.0/gems/commonmarker-0.23.9/ext/commonmarker
+current directory: /Users/bleathers/Documents/Personal/drews_github/NormanWalkwell.github.io/vendor/bundle/ruby/2.6.0/gems/commonmarker-0.23.9/ext/commonmarker
 make "DESTDIR=" install
-/usr/bin/install -c -m 0755 commonmarker.bundle ./.gem.20230421-50436-1csufq0/commonmarker
+/usr/bin/install -c -m 0755 commonmarker.bundle ./.gem.20230422-50795-wsmcwc/commonmarker

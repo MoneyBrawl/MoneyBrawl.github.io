@@ -1,11 +1,11 @@
-current directory: /Users/bleathers/Documents/Personal/a_locked_on_bulldogs/delete/vendor/bundle/ruby/2.6.0/gems/http_parser.rb-0.8.0/ext/ruby_http_parser
-/System/Library/Frameworks/Ruby.framework/Versions/2.6/usr/bin/ruby -I /System/Library/Frameworks/Ruby.framework/Versions/2.6/usr/lib/ruby/2.6.0 -r ./siteconf20230421-50436-msa5as.rb extconf.rb
+current directory: /Users/bleathers/Documents/Personal/drews_github/NormanWalkwell.github.io/vendor/bundle/ruby/2.6.0/gems/http_parser.rb-0.8.0/ext/ruby_http_parser
+/System/Library/Frameworks/Ruby.framework/Versions/2.6/usr/bin/ruby -I /System/Library/Frameworks/Ruby.framework/Versions/2.6/usr/lib/ruby/2.6.0 -r ./siteconf20230422-50795-zqz6he.rb extconf.rb
 creating Makefile
 
-current directory: /Users/bleathers/Documents/Personal/a_locked_on_bulldogs/delete/vendor/bundle/ruby/2.6.0/gems/http_parser.rb-0.8.0/ext/ruby_http_parser
+current directory: /Users/bleathers/Documents/Personal/drews_github/NormanWalkwell.github.io/vendor/bundle/ruby/2.6.0/gems/http_parser.rb-0.8.0/ext/ruby_http_parser
 make "DESTDIR=" clean
 
-current directory: /Users/bleathers/Documents/Personal/a_locked_on_bulldogs/delete/vendor/bundle/ruby/2.6.0/gems/http_parser.rb-0.8.0/ext/ruby_http_parser
+current directory: /Users/bleathers/Documents/Personal/drews_github/NormanWalkwell.github.io/vendor/bundle/ruby/2.6.0/gems/http_parser.rb-0.8.0/ext/ruby_http_parser
 make "DESTDIR="
 compiling ruby_http_parser.c
 ruby_http_parser.c:323:22: warning: '(' and '{' tokens introducing statement expression appear in different macro expansion contexts [-Wcompound-token-split-by-macro]
@@ -463,6 +463,6 @@ compiling ryah_http_parser.c
 linking shared-object ruby_http_parser.bundle
 ld: warning: directory not found for option '-L/AppleInternal/Library/BuildRoots/9e200cfa-7d96-11ed-886f-a23c4f261b56/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.2.Internal.sdk/usr/local/lib'
 
-current directory: /Users/bleathers/Documents/Personal/a_locked_on_bulldogs/delete/vendor/bundle/ruby/2.6.0/gems/http_parser.rb-0.8.0/ext/ruby_http_parser
+current directory: /Users/bleathers/Documents/Personal/drews_github/NormanWalkwell.github.io/vendor/bundle/ruby/2.6.0/gems/http_parser.rb-0.8.0/ext/ruby_http_parser
 make "DESTDIR=" install
-/usr/bin/install -c -m 0755 ruby_http_parser.bundle ./.gem.20230421-50436-hehxgw
+/usr/bin/install -c -m 0755 ruby_http_parser.bundle ./.gem.20230422-50795-prrjk7

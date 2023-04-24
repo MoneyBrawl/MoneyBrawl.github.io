@@ -430,3 +430,16 @@
     }
   }
 }
+
+.sublinks li {
+  flex: 1 0 150px;
+  margin: 0.5rem;
+  text-align: center;
+}
+
+.sublinks {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 1rem;
+}

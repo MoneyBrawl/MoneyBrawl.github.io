@@ -1,25 +1,51 @@
 # main links links
 main:
-#   - title: "Publications"
-#     url: /publications/
-
-#   - title: "Talks"
-#     url: /talks/    
-
-#   - title: "Teaching"
-#     url: /teaching/    
-        
   - title: "Telling Stories with Data"
     url: /telling-stories-with-data/
+    sublinks:
+      - title: "Article"
+        url: /telling-stories-with-data/article/
+
+      - title: "Jupyter Notebook"
+        url: /telling-stories-with-data/notebook/
+
+      - title: "Podcast"
+        url: /telling-stories-with-data/podcast/
+
+  - title: "D3"
+    url: /D3/
 
   - title: "Tableau"
     url: /tableau/
 
-  - title: "D3"
-    url: /D3/
+  # - title: "Publications"
+  #   url: /publications/
+
+  # - title: "Talks"
+  #   url: /talks/    
+
+  # - title: "Teaching"
+  #   url: /teaching/    
+    
+  # - title: "Portfolio"
+  #   url: /portfolio/
+        
+  # - title: "Blog Posts"
+  #   url: /year-archive/
     
   # - title: "CV"
   #   url: /cv/
     
   # - title: "Guide"
   #   url: /markdown/
+
+# stories:
+
+#   - title: "Article"
+#     url: /telling-stories-with-data/article/
+
+#   - title: "Jupyter Notebook"
+#     url: /telling-stories-with-data/notebook/
+
+#   - title: "Podcast"
+#     url: /telling-stories-with-data/podcast/

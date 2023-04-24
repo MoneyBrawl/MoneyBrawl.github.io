@@ -1,12 +1,12 @@
-current directory: /Users/bleathers/Documents/Personal/a_locked_on_bulldogs/delete/vendor/bundle/ruby/2.6.0/gems/unf_ext-0.0.8.2/ext/unf_ext
-/System/Library/Frameworks/Ruby.framework/Versions/2.6/usr/bin/ruby -I /System/Library/Frameworks/Ruby.framework/Versions/2.6/usr/lib/ruby/2.6.0 -r ./siteconf20230421-50436-11x9lax.rb extconf.rb
+current directory: /Users/bleathers/Documents/Personal/drews_github/NormanWalkwell.github.io/vendor/bundle/ruby/2.6.0/gems/unf_ext-0.0.8.2/ext/unf_ext
+/System/Library/Frameworks/Ruby.framework/Versions/2.6/usr/bin/ruby -I /System/Library/Frameworks/Ruby.framework/Versions/2.6/usr/lib/ruby/2.6.0 -r ./siteconf20230422-50795-9kvorh.rb extconf.rb
 checking for -lstdc++... yes
 creating Makefile
 
-current directory: /Users/bleathers/Documents/Personal/a_locked_on_bulldogs/delete/vendor/bundle/ruby/2.6.0/gems/unf_ext-0.0.8.2/ext/unf_ext
+current directory: /Users/bleathers/Documents/Personal/drews_github/NormanWalkwell.github.io/vendor/bundle/ruby/2.6.0/gems/unf_ext-0.0.8.2/ext/unf_ext
 make "DESTDIR=" clean
 
-current directory: /Users/bleathers/Documents/Personal/a_locked_on_bulldogs/delete/vendor/bundle/ruby/2.6.0/gems/unf_ext-0.0.8.2/ext/unf_ext
+current directory: /Users/bleathers/Documents/Personal/drews_github/NormanWalkwell.github.io/vendor/bundle/ruby/2.6.0/gems/unf_ext-0.0.8.2/ext/unf_ext
 make "DESTDIR="
 compiling unf.cc
 unf.cc:27:16: warning: '(' and '{' tokens introducing statement expression appear in different macro expansion contexts [-Wcompound-token-split-by-macro]
@@ -133,6 +133,6 @@ unf.cc:30:16: note: ')' token is here
 linking shared-object unf_ext.bundle
 ld: warning: directory not found for option '-L/AppleInternal/Library/BuildRoots/9e200cfa-7d96-11ed-886f-a23c4f261b56/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.2.Internal.sdk/usr/local/lib'
 
-current directory: /Users/bleathers/Documents/Personal/a_locked_on_bulldogs/delete/vendor/bundle/ruby/2.6.0/gems/unf_ext-0.0.8.2/ext/unf_ext
+current directory: /Users/bleathers/Documents/Personal/drews_github/NormanWalkwell.github.io/vendor/bundle/ruby/2.6.0/gems/unf_ext-0.0.8.2/ext/unf_ext
 make "DESTDIR=" install
-/usr/bin/install -c -m 0755 unf_ext.bundle ./.gem.20230421-50436-1lhpv0f
+/usr/bin/install -c -m 0755 unf_ext.bundle ./.gem.20230422-50795-7warie

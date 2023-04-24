@@ -1,6 +1,91 @@
 {% include base_path %}
 
+<!-- <div class="masthead">
+  <div class="masthead__inner-wrap">
+    <div class="masthead__menu">
+      <nav id="site-nav" class="greedy-nav">
+        <button><div class="navicon"></div></button>
+        <ul class="visible-links">
+          <li class="main-menu-item"><a href="{{ base_path }}/">{{ site.title }}</a></li>
+          <li class="main-menu-item" id="tswd-menu-item">
+            <a href="{{ base_path }}/telling-stories-with-data/">Telling Stories with Data</a>
+            <ul class="sub-menu">
+              <li><a href="{{ base_path }}/telling-stories-with-data/article/">Article</a></li>
+              <li><a href="{{ base_path }}/telling-stories-with-data/jupyter-notebook/">Jupyter Notebook</a></li>
+              <li><a href="{{ base_path }}/telling-stories-with-data/podcast/">Podcast</a></li>
+            </ul>
+          </li>
+          {% for link in site.data.navigation.main %}
+            {% if link.url contains 'http' %}
+              {% assign domain = '' %}
+            {% else %}
+              {% assign domain = base_path %}
+            {% endif %}
+            {% unless link.title == 'Telling Stories with Data' %}
+              <li {% if link.sublinks %}class="sub-menu-item" {% endif %}>
+                <a href="{{ domain }}{{ link.url }}">{{ link.title }}</a>
+                {% if (page.url contains link.url or page.url == "/") and link.sublinks %}
+                  <ul class="sub-menu">
+                    {% for sublink in link.sublinks %}
+                      <li><a href="{{ domain }}{{ sublink.url }}">{{ sublink.title }}</a></li>
+                    {% endfor %}
+                  </ul>
+                {% else %}
+                  <ul class="sub-menu">
+                    <li>&nbsp</li>
+                  </ul>
+                {% endif %}
+              </li>
+            {% endunless %}
+          {% endfor %}
+        </ul>
+        <ul class="hidden-links hidden"></ul>
+      </nav>
+    </div>
+  </div>
+</div> -->
 <div class="masthead">
+  <div class="masthead__inner-wrap">
+    <div class="masthead__menu">
+      <nav id="site-nav" class="mast-greedy-nav">
+        <button><div class="navicon"></div></button>
+        <ul class="mast-visible-links">
+          <li class="main-menu"><a href="{{ base_path }}/">{{ site.title }}</a>
+          
+            <ul class="sub-menu">
+              <li>&nbsp</li>
+            </ul>
+          </li>
+          {% for link in site.data.navigation.main %}
+            {% if link.url contains 'http' %}
+              {% assign domain = '' %}
+            {% else %}
+              {% assign domain = base_path %}
+            {% endif %}
+            <li {% if (page.url contains link.url or (page.url == "/" and link.url contains "tories")) %}class="selected-menu-item" {% else %} class="unselected-menu-item" {% endif %}> 
+              <a href="{{ domain }}{{ link.url }}">{{ link.title }}</a>
+              {% if (page.url contains link.url or page.url == "/") and link.sublinks %}
+                <ul class="sub-menu-item">
+                  {% for sublink in link.sublinks %}
+                    <li {% if (page.url == sublink.url) or (page.url == "/" and sublink.url contains "tories") %} class="selected-sub-menu-item" {% else %} class="unselected-sub-menu-item" {% endif %} ><a href="{{ domain }}{{ sublink.url }}">{{ sublink.title }}</a></li>
+                  {% endfor %}
+                </ul>
+              {% else %}
+              <ul class="sub-menu">
+                <li>&nbsp</li>
+              </ul>
+              {% endif %}
+            </li>
+          {% endfor %}
+        </ul>
+        <ul class="hidden-links hidden"></ul>
+      </nav>
+    </div>
+  </div>
+</div>
+
+
+<!-- <div class="masthead">
   <div class="masthead__inner-wrap">
     <div class="masthead__menu">
       <nav id="site-nav" class="greedy-nav">
@@ -10,14 +95,23 @@
           {% for link in site.data.navigation.main %}
             {% if link.url contains 'http' %}
               {% assign domain = '' %}
-              {% else %}
+            {% else %}
               {% assign domain = base_path %}
             {% endif %}
-            <li class="masthead__menu-item"><a href="{{ domain }}{{ link.url }}">{{ link.title }}</a></li>
+            <li class="masthead__menu-item {% if page.url == link.url %}active{% endif %}">
+              <a href="{{ domain }}{{ link.url }}">{{ link.title }}</a>
+              {% if (page.url contains link.url or page.url == "/") and link.sublinks %}
+                <ul class="masthead__sublinks">
+                  {% for sublink in link.sublinks %}
+                    <li><a href="{{ domain }}{{ sublink.url }}">{{ sublink.title }}</a></li>
+                  {% endfor %}
+                </ul>
+              {% endif %}
+            </li>
           {% endfor %}
         </ul>
         <ul class="hidden-links hidden"></ul>
       </nav>
     </div>
   </div>
-</div>
+</div> -->
