@@ -5,9 +5,6 @@ author_profile: true
 ---
 
 {% include base_path %}
-<!-- {% for post in site.D3 reversed %}
-  {% include archive-single.html %}
-{% endfor %} -->
 
 <!DOCTYPE html><html><head>
     <style>
@@ -53,22 +50,16 @@ author_profile: true
         }
         return null;
       }
-// Get the div with the class "sidebar sticky"
 const sidebarSticky = document.querySelector('.sidebar.sticky');
 const archiveDiv = document.querySelector('.archive');
 
 let width;
 let height;
-// Check if the element exists in the DOM
 if (archiveDiv) {
-  // Get the width of the div
-  // const sidebarStickyWidth = sidebarSticky.offsetWidth;
-  // Log the width to the console (for debugging purposes)
   
-  width = archiveDiv.offsetWidth; //(window.innerWidth - sidebarStickyWidth * 2.5);
+  width = archiveDiv.offsetWidth; 
   height = archiveDiv.offsetWidth * .7;
 
-  // Use the width in your calculations or styles as needed
 } else {
   
   width = window.innerWidth;
@@ -224,7 +215,7 @@ if (archiveDiv) {
           ]);
 
         const r = scaleSqrt()
-          .domain([10, 25]) //extent(data, rValue))
+          .domain([10, 25]) 
           .range([5, 50]);
 
         const get_tooltip = (d) => {
@@ -268,9 +259,6 @@ if (archiveDiv) {
 
         const anchors = { ...marks };
 
-        ////////////////////////////////////////////////////////////
-        // Y Axis
-        ////////////////////////////////////////////////////////////
         const yAxis = axisLeft(y).tickSize(
           -(width - margin.left - margin.right)
         );
@@ -310,9 +298,6 @@ if (archiveDiv) {
           )
           .attr('dy', '1em');
 
-        ////////////////////////////////////////////////////////////
-        // X Axis
-        ////////////////////////////////////////////////////////////
         const xAxis = axisBottom(x).tickSize(
           -(height - margin.bottom - margin.top)
         );
@@ -337,11 +322,10 @@ if (archiveDiv) {
               axisSubLabelFontSize -
               axisLabelFontSize / 6 -
               vertical_line_spacing
-          ) // Set below
+          ) 
           .attr('dy', '.2em')
           .style('text-anchor', 'middle')
           .text('Average Recruiting Score');
-        // X-Axis
         svg
           .append('text')
           .attr('id', 'xsublabel')
@@ -357,9 +341,6 @@ if (archiveDiv) {
             "(Each season's recruiting score is the average Rivals score for the 4 prior recruiting classes.)"
           );
 
-        ////////////////////////////////////////////////////////////
-        // Formatting
-        ////////////////////////////////////////////////////////////
 
         const groups = svg
           .selectAll('g.mark-group')
@@ -367,7 +348,6 @@ if (archiveDiv) {
           .join('g')
           .attr('class', 'mark-group');
 
-        // Then add the circles to the 'g' elements
         const circles = groups
           .append('circle')
           .attr('cx', (d) => d.x)
@@ -375,8 +355,6 @@ if (archiveDiv) {
           .attr('r', (d) => d.r)
           .attr('fill', (d) => d.color);
 
-        // Finally, add the text to the 'g' elements.
-        // Each line will be a separate 'tspan' element, and their 'dy' attribute will control line spacing.
         const labels = groups
           .append('text')
           .attr('x', (d) => d.x)
@@ -410,13 +388,11 @@ if (archiveDiv) {
         const tooltip = d3.select('.tooltip');
         circles
           .on('mouseenter', (event, d) => {
-            // Show the tooltip and set its content
             tooltip
               .style('opacity', 1)
               .html(d.tooltip);
           })
           .on('mousemove', (event) => {
-            // Update the tooltip position based on the mouse position
             tooltip
               .style(
                 'left',
@@ -428,7 +404,6 @@ if (archiveDiv) {
               );
           })
           .on('mouseleave', () => {
-            // Hide the tooltip
             tooltip.style('opacity', 0);
           });
 
@@ -468,9 +443,7 @@ if (archiveDiv) {
         });
 
         function redrawLabels() {
-          // Redraw labels and leader lines
           labels.each(function (d, i) {
-            // console.log(marks[i].x);
             d3.select(this)
               .selectAll('tspan')
               .transition()
@@ -501,25 +474,14 @@ if (archiveDiv) {
           { value: 20, label: '20' },
           { value: 25, label: '25' },
         ];
-
-        // Create the legend group and assign it an x and y position
         const legend = svg
           .append('g')
           .attr('class', 'legend');
-          // .attr(
-          //   'transform',
-          //   `translate(${
-          //     width - margin.right / 2
-          //   },${margin.top + 50})`
-          // );
-
-        // Create circles in the legend
         legend
           .selectAll('circle')
           .data(legendData)
           .join('circle')
           .attr('r', (d) => r(d.value))
-          // .attr("cx", (d) => r(d.value))
           .attr('cy', (d, i) => {
             let yOffset = 0;
             for (let j = 0; j < i; j++) {
@@ -531,7 +493,6 @@ if (archiveDiv) {
           .attr('fill', 'grey')
           .attr('opacity', 0.3)
           .attr('stroke-width', 3);
-        // Create text labels for the legend circles
         legend
           .selectAll('text')
           .data(legendData)
@@ -555,8 +516,6 @@ if (archiveDiv) {
 
         const domElement = legend.node();
         const boundingBox = domElement.getBoundingClientRect();
-        // console.log(legend.selectAll('g'));
-        // console.log();
 
         legend
           .append('text')
@@ -574,20 +533,11 @@ if (archiveDiv) {
         console.log(height - boundingBox.height - margin.bottom);
         console.log(margin.top + 50);
         legend.attr(
-          //   'transform',
-          //   `translate(${margin.left + width}, ${height - boundingBox.height - margin.bottom})`
-          //   // `translate(${margin.left + width}, 0)`
-          // )
-
           'transform',
             `translate(${
               width - margin.right / 2
             },${margin.top + 50})`
           );
-        // 'y', );
-        // const legendHeight = legendElem.offsetHeight;
-
-        // legend.attr('y', legendHeight);
       };
 
 
@@ -595,6 +545,5 @@ if (archiveDiv) {
       main();
     </script>
   
-  <!-- <script src="{{ site.baseurl }}/assets/D3/bundle.js"></script> -->
 
 </body></html>
