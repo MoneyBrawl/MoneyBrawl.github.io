@@ -1,0 +1,9 @@
+{
+  "type": "module",
+  "scripts": {
+    "build": "rollup -c"
+  },
+  "devDependencies": {
+    "rollup": "^3.21.8"
+  }
+}

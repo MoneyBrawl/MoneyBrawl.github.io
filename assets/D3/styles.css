@@ -1,0 +1,46 @@
+      body {
+        margin: 0;
+        overflow: hidden;
+      }
+      text {
+        font-family: merriweather sans;
+      }
+      .tick text {
+        font-size: 1.5vh;
+      }
+      .tick line {
+        stroke: lightgrey;
+        zorder: -10;
+        stroke-opacity: 0.9;
+        /*         shape-rendering: crispEdges; */
+      }
+      .label {
+        font-size: 2.5vh;
+        stroke: lightgrey;
+      }
+      .chart-title {
+        font-size: 6.5vh;
+      }
+      .axis-label {
+        font-size: 3.5vh;
+      }
+      .axis-sub-label {
+        font-size: 1vh;
+      }
+      .tooltip {
+        position: absolute;
+        background-color: white;
+        font-family: merriweather sans;
+        padding: 4px;
+        border: 1px solid grey;
+        font-size: 14px;
+        pointer-events: none;
+        opacity: 0; /* Initially hidden */
+        transition: opacity 100ms; /* Make the tooltip appear faster */
+        border-radius: 8px;
+      }
+      .legend-title {
+        font-family: merriweather sans;
+        border: 1px solid grey;
+        font-size: 1.9vh;
+      }

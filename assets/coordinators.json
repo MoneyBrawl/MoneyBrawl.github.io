@@ -1,0 +1,27 @@
+{
+  "Monken": {
+    "color": "#000000",
+    "text-anchor": "middle",
+    "alignment-baseline": "hanging"
+  },
+  "Bobo": {
+    "color": "#BA0C2F",
+    "text-anchor": "middle",
+    "alignment-baseline": "hanging"
+  },
+  "Chaney": {
+    "color": "#B4BD00",
+    "text-anchor": "middle",
+    "alignment-baseline": "hanging"
+  },
+  "Coley": {
+    "color": "#9EA2A2",
+    "text-anchor": "middle",
+    "alignment-baseline": "hanging"
+  },
+  "Schottenheimer": {
+    "color": "#00A3AD",
+    "text-anchor": "middle",
+    "alignment-baseline": "text-after-edge"
+  }
+}
